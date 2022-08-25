@@ -10,6 +10,7 @@ const _ = db.command
 exports.main = async (event, context) => {
   var newC = []
   var yesterday = []
+  //清空座位
   for (let i = 0; i < 24; i++) {
     newC[i] = true
   }

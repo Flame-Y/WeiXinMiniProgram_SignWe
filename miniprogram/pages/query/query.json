@@ -1,7 +1,8 @@
 {
   "usingComponents": {
-    "van-notice-bar": "@vant/weapp/notice-bar/index"
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-overlay": "@vant/weapp/overlay/index"
   },
   "enablePullDownRefresh":true,
-  "navigationBarTitleText":"科技楼 232"
+  "navigationBarTitleText":"科技楼 423"
 }

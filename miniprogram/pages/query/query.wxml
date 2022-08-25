@@ -1,14 +1,24 @@
-<van-notice-bar wx:if="{{isOP}}" color="#6a60a9" background="#a3daff" mode="link"
-    bind:click="goadmin" text="点击座位强制重置状态，点此横幅前往管理后台" />
-<view class="root">
-  <view class="chairs">
-    <view wx:for="{{chairs}}" bindtap="clickme" data-num="{{index}}" wx:key="index" class="C">
-      <image wx:if="{{item}}" class="c" src="/images/freeC.png"></image>
-      <image wx:if="{{!item}}" class="c" src="/images/unfreeC.png"></image>
-      <text>{{index+1}}</text>
+<van-notice-bar wx:if="{{isOP}}" color="#6a60a9" background="#a3daff" mode="link" bind:click="goadmin" text="点击座位强制重置状态，点此横幅前往管理后台" />
+<view class="page-section">
+
+  <movable-area scale-area style="height:{{dynamicHeight}}px">
+    <movable-view direction="all" bindchange="onChange" x='75rpx' y='30rpx' bindscale="onScale" out-of-bounds scale scale-min="0.5" scale-max="1.1" scale-value="{{scale}}">
+      <view class="C">
+        <view class="chairs" wx:for="{{div}}" data-num="{{index}}" wx:key="location">
+          <image wx:if="{{item.word==='成员工位'}}" class="c" src="/images/tab-3.png" bindtap="onClickShow"></image>
+          <image wx:if="{{item.word==='流动工位1'}}" class="c" src="/images/freeC.png" bindtap="clickme" data-word="{{item.type}}"></image>
+          <image wx:if="{{item.word==='流动工位0'}}" class="c" src="/images/unfreeC.png" bindtap="clickme" data-word="{{item.type}}"></image>
+          <view wx:if="{{item.word==='流动工位1'||item.word==='流动工位0'}}" class='chairTag'>{{item.type}}</view>
+
+        </view>
+
+      </view>
+    </movable-view>
+
+  </movable-area>
+  <van-overlay show="{{ show }}" bind:click="onClickHide" class="overlay">
+    <view class="wrapper">
+      <view class="block" catch:tap="noop" >成员工位</view>
     </view>
-  </view>
-  <view class="tips">绿色可座，红色有人</view>
-  <view class="tips">每晚11:30自动重置状态</view>
-  <!-- <view bindtap="test">测试</view> -->
+  </van-overlay>
 </view>

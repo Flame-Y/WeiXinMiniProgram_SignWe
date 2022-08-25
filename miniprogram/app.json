@@ -26,7 +26,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "打卡",
+        "text": "定位",
         "iconPath": "images/tab-1.png",
         "selectedIconPath": "images/tab-1c.png"
       },

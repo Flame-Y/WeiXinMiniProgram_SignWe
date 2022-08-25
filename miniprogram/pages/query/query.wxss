@@ -1,37 +1,62 @@
 /* pages/query/query.wxss */
-.C {
-  width: 170rpx;
-  display: flex;
-  flex-direction: column;
+movable-view {
   align-items: center;
+  justify-content: center;
+  height: 900rpx;
+  width: 600rpx;
 }
 
-.c {
-  width: 120rpx;
-  height: 120rpx;
+movable-area {
+  width: 750rpx;
+  /* background-color: #ccc; */
+  overflow: hidden;
+  margin: auto;
 }
 
-.nts{
-  text-align: center;
-}
-.root {
-  height: 100%;
+.C {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .chairs {
+  position: relative;
+  height: 72rpx;
+  width: 72rpx;
+  border: 1rpx solid #f0f0f0;
+  background-color: #fff;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 30rpx 10rpx;
+  flex-direction: column;
+
 }
 
-.tips {
-  font-size: 30rpx;
-  color: #ccc;
+.chairs image {
+  
+  width: 40rpx;
+  height: 40rpx;
+  margin: auto;
+}
+.chairs .chairTag{
+  color: #c0c0c0;
+  font-size: 25rpx;
+
+  position: absolute;
+  bottom: -6rpx;
+  right: 0;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  line-height: 100%;
+}
+
+.block {
+  border-radius: 30rpx;
+  text-align: center;
+  width: 300rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  margin-bottom: 40rpx;
+  background-color: #fff;
 }
