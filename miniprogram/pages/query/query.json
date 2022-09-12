@@ -4,5 +4,6 @@
     "van-overlay": "@vant/weapp/overlay/index"
   },
   "enablePullDownRefresh":true,
-  "navigationBarTitleText":"科技楼 423"
+  "navigationBarTitleText":"科技楼 423",
+  "disableScroll":true
 }

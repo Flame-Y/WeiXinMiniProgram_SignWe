@@ -522,6 +522,10 @@ Page({
       show: false
     });
   },
+  refresh(e){
+    this.onLoad();
+    console.log(e);
+  },
   noop() {},
   clickme(res) {
     const num = res.currentTarget.dataset.word
