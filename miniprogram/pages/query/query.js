@@ -15,9 +15,15 @@ Page({
     aircshow: false,
     sinkshow: false,
     isOP: false,
+    hEnough:false,
   },
   onLoad: function (options) {
     this.getC()
+    var h = wx.getSystemInfoSync().windowHeight;
+    if(h>=642)
+    this.setData({
+      hEnough:true
+    })
   },
   onShow: function () {
     wx.startPullDownRefresh()

@@ -26,3 +26,19 @@
     transform: scale3d(1, 1, 1);
   }
 }
+
+.text-animation {
+	animation: text-animation 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes text-animation {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}

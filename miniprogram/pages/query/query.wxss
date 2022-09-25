@@ -15,7 +15,8 @@
   width: 73rpx;
   height: 73rpx;
   border: 3rpx solid #464643;
-  border-radius: 10px;
+  border-radius: 10rpx;
+  text-align: right;
 }
 
 .t {
@@ -27,9 +28,13 @@
 }
 
 .seat text {
-  /* color: #c0c0c0; */
+  display: block;
   font-size: 25rpx;
-  position: absolute;
+  /* margin-left: 50rpx; */
+  font-family: "Barlow", sans-serif;
+  font-variant-numeric: tabular-nums;
+  margin-right: 5rpx;
+  margin-top: 40rpx;
 }
 
 .wrapper {
@@ -72,6 +77,17 @@
   background: #FFD6B8;
   border: 3rpx solid #464643;
   border-radius: 0 0 77rpx 0;
+}
+
+.dis {
+  display: none;
+}
+
+.text {
+  position: absolute;
+  bottom: 25vh;
+  left: 170rpx;
+  font-size: 5vh;
 }
 
 .left .leftseat {
@@ -162,6 +178,9 @@
   margin-bottom: 0.6vh;
 }
 
+.main .mid .midseat .row {
+  margin-bottom: 10rpx;
+}
 
 .main .mid .bottomseat {
   position: absolute;
@@ -325,4 +344,5 @@
   border: 3rpx solid #464643;
   border-radius: 10rpx;
 }
+
 @import "../query/animation.wxss";

@@ -51,6 +51,7 @@
           <view class="seat f" wx:if="{{!chairs[7]}}" bindtap="clickme" data-num="8"><text>8</text></view>
         </view>
       </view>
+      <view class='text text-animation {{hEnough?"":"dis"}}'>Turing Team</view>
       <view class="bottomseat">
         <view class="seat t" wx:if="{{chairs[11]}}" bindtap="clickme" data-num="12"><text>12</text></view>
         <view class="seat f" wx:if="{{!chairs[11]}}" bindtap="clickme" data-num="12"><text>12</text></view>
