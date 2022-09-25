@@ -1,48 +1,37 @@
 /* pages/query/query.wxss */
-movable-view {
-  align-items: center;
-  justify-content: center;
-  height: 900rpx;
-  width: 600rpx;
-}
-
-movable-area {
+.page-section {
+  display: flex;
   width: 750rpx;
-  /* background-color: #ccc; */
-  overflow: hidden;
-  margin: auto;
+  height: 2668px;
+  padding-top: 13rpx;
+  background-color: #fbfaef;
 }
 
-.C {
-  display: flex;
-  flex-wrap: wrap;
+.member {
+  background: #FC9D8A;
 }
 
-.chairs {
-  position: relative;
-  height: 72rpx;
-  width: 72rpx;
-  border: 1rpx solid #f0f0f0;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-
+.seat {
+  width: 73rpx;
+  height: 73rpx;
+  border: 3rpx solid #464643;
+  border-radius: 10px;
 }
 
-.chairs image {
-  
-  width: 40rpx;
-  height: 40rpx;
-  margin: auto;
+.t {
+  background: #A3D0FF;
 }
-.chairs .chairTag{
-  color: #c0c0c0;
+
+.f {
+  background: #EAE9DE;
+}
+
+.seat text {
+  /* color: #c0c0c0; */
   font-size: 25rpx;
-
   position: absolute;
-  bottom: -6rpx;
-  right: 0;
 }
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -61,45 +50,279 @@ movable-area {
   background-color: #fff;
 }
 
-.refresh{
-  display: block;
-  background-color: white;
-  height: 120rpx;
-  width: 75rpx;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border-top-left-radius: 20rpx;
-  box-shadow: 6rpx 8rpx 18rpx black;
-  font-size: 16rpx;
-}
-.refresh .rf{
-  display: block;
-  margin: auto;
-  margin-top: 16rpx;
-  margin-bottom: 12rpx;
-  width: 40rpx;
-  height: 40rpx;
-}
-.refresh .word{
-  display: inline-block;
-}
-.refresh .icon{
-  display: inline-block;
-  margin-right: 5rpx;
-  width: 16rpx;
-  height: 16rpx;
-  line-height: 16rpx;
-}
-.refresh .green,.refresh .red {
-  text-align: center;
-  margin-bottom: 10rpx;
-  line-height: 16rpx;
-}
-.refresh .g{
-  background-color: #3cb670;
+.left {
+  margin-left: 30rpx;
+  height: 100vh;
 }
 
-.refresh .r{
-  background-color: #fa5252;
+.machine {
+  /* position: absolute; */
+  width: 76rpx;
+  height: 281rpx;
+  /*26vh*/
+  background: #FFD6B8;
+  border: 3rpx solid #464643;
+  border-radius: 10rpx;
 }
+
+.door {
+  margin-top: 16.2vh;
+  width: 79rpx;
+  height: 77rpx;
+  background: #FFD6B8;
+  border: 3rpx solid #464643;
+  border-radius: 0 0 77rpx 0;
+}
+
+.left .leftseat {
+  position: absolute;
+  bottom: 0;
+}
+
+.left .leftseat .seat {
+  margin-bottom: 0.6vh;
+}
+
+.main {
+  /* float: right; */
+  flex: 1;
+  margin-left: 3rpx;
+  /* background-color: pink; */
+}
+
+.main .mid .top {
+  position: absolute;
+  margin-left: 41rpx;
+}
+
+.main .mid .top .top-left {
+  position: absolute;
+  margin-left: 40rpx;
+
+}
+
+.main .mid .top .line1 {
+  position: absolute;
+  left: 133rpx;
+  width: 4rpx;
+  height: 348rpx;
+  background: #CECECC;
+  border-radius: 2rpx;
+}
+
+.main .mid .top .top-right {
+  position: absolute;
+  left: 141rpx;
+}
+
+.main .mid .top .vertical {
+  margin-bottom: 0.6vh;
+  width: 85rpx;
+  height: 169rpx;
+  border: 3rpx solid #464643;
+  border-radius: 10rpx;
+}
+
+.main .mid .top .line2 {
+  position: absolute;
+  top: 361rpx;
+  margin-left: 14rpx;
+  width: 241rpx;
+  height: 4rpx;
+  background: #CECECC;
+  border-radius: 2rpx;
+}
+
+.main .mid .top .horizontal {
+  position: absolute;
+  top: 372rpx;
+  margin-left: 3rpx;
+  width: 124rpx;
+  height: 80rpx;
+  background: #FC9D8A;
+  border: 3rpx solid #464643;
+  border-radius: 10rpx;
+}
+
+.main .mid .top .horr {
+  position: absolute;
+  left: 139rpx;
+}
+
+.main .mid .midseat {
+  position: absolute;
+  top: 633rpx;
+  left: 98rpx;
+  /* bottom: 400rpx; */
+}
+
+.main .mid .midseat .seat {
+  display: inline-block;
+  margin-right: 11rpx;
+  margin-bottom: 0.6vh;
+}
+
+
+.main .mid .bottomseat {
+  position: absolute;
+  bottom: 90rpx;
+  margin-left: 146rpx;
+}
+
+.main .mid .bottomseat .seat {
+  display: inline-block;
+  margin-left: 11rpx;
+}
+
+.main .mid .bookcase {
+  position: absolute;
+  bottom: 9rpx;
+  margin-left: 31rpx;
+  width: 283rpx;
+  height: 72rpx;
+  background: #FFD6B8;
+  border: 3rpx solid #464643;
+  border-radius: 10rpx;
+}
+
+.main .line3 {
+  position: absolute;
+  left: 106rpx;
+  top: 715rpx;
+  /* bottom: 495rpx; */
+  width: 595rpx;
+  height: 4rpx;
+  background: #CECECC;
+  border-radius: 2rpx;
+}
+
+.main .mid-right {
+  margin-left: 319rpx;
+}
+
+.main .mid-right .mr-top {
+  position: absolute;
+  top: 40rpx;
+}
+
+.main .mid-right .mr-top .vertical {
+  margin-bottom: 6rpx;
+  width: 80rpx;
+  height: 124rpx;
+  border: 3rpx solid #464643;
+  border-radius: 10rpx;
+}
+
+.main .mid-right .mr-top .mrt-left {
+  position: absolute;
+}
+
+.main .mid-right .mr-top .mrt-right {
+  margin-left: 96rpx;
+}
+
+.main .mid-right .mr-top .line4 {
+  position: absolute;
+  top: 8rpx;
+  margin-left: 88rpx;
+  width: 4rpx;
+  height: 241rpx;
+  background: #CECECC;
+  border-radius: 2rpx;
+}
+
+.main .mid-right .line6 {
+  position: absolute;
+  top: 639rpx;
+  /* bottom: 415rpx; */
+  left: 445rpx;
+  width: 4rpx;
+  height: 160rpx;
+  background: #CECECC;
+  border-radius: 2rpx;
+}
+
+.main .mid-right .rmember {
+  position: absolute;
+  top: 332rpx;
+  margin-left: 22rpx;
+}
+
+.main .mid-right .rmember .horizontal {
+  width: 120rpx;
+  height: 80rpx;
+  display: inline-block;
+  border: 3rpx solid #464643;
+  border-radius: 10rpx;
+}
+
+.main .mid-right .rmember .horr {
+  position: absolute;
+  left: 133rpx;
+}
+
+.main .mid-right .rmember .row1 {
+  margin-bottom: 7rpx;
+}
+
+.main .mid-right .rmember .line5 {
+  position: absolute;
+  top: 90rpx;
+  margin-left: 5rpx;
+  width: 249rpx;
+  height: 4rpx;
+  background: #CECECC;
+  border-radius: 2rpx;
+}
+
+.main .mid-right .rmember .right-bottom {
+  position: absolute;
+  top: 295rpx;
+  /* bottom: -405rpx; */
+}
+
+.main .mid-right .bottom {
+  position: absolute;
+  bottom: 9rpx;
+  margin-left: 19rpx;
+  width: 180rpx;
+  height: 80rpx;
+  background: #FC9D8A;
+  border: 3rpx solid #464643;
+  border-radius: 10rpx;
+}
+
+.main .right {
+  position: absolute;
+  right: 30rpx;
+}
+
+.main .right .sink {
+
+  width: 76rpx;
+  height: 149rpx;
+  background: #FFD6B8;
+  border: 3rpx solid #464643;
+  border-radius: 10rpx;
+}
+
+.main .right .airc1 {
+  margin-top: 40rpx;
+  width: 76rpx;
+  height: 99rpx;
+  background: #FFD6B8;
+  border: 3rpx solid #464643;
+  border-radius: 10rpx;
+}
+
+.main .airc2 {
+  position: absolute;
+  right: 30rpx;
+  bottom: 9rpx;
+  width: 76rpx;
+  height: 99rpx;
+  background: #FFD6B8;
+  border: 3rpx solid #464643;
+  border-radius: 10rpx;
+}
+@import "../query/animation.wxss";
