@@ -3,7 +3,7 @@
     <view class='machine {{machineshow?"jello":""}}' bindtap="machineShow"></view>
     <view class="door" bindtap="doorShow"></view>
     <view class="leftseat">
-      <view class="seat t" wx:if="{{chairs[8]}}" bindtap="clickme" data-num="9"><text>9</text></view>
+      <view class="seat t a" wx:if="{{chairs[8]}}" bindtap="clickme" data-num="9"><text>9</text></view>
       <view class="seat f" wx:if="{{!chairs[8]}}" bindtap="clickme" data-num="9"><text>9</text></view>
       <view class="seat t" wx:if="{{chairs[9]}}" bindtap="clickme" data-num="10"><text>10</text></view>
       <view class="seat f" wx:if="{{!chairs[9]}}" bindtap="clickme" data-num="10"><text>10</text></view>
@@ -40,6 +40,8 @@
           <view class="seat t" wx:if="{{chairs[3]}}" bindtap="clickme" data-num="4"><text>4</text></view>
           <view class="seat f" wx:if="{{!chairs[3]}}" bindtap="clickme" data-num="4"><text>4</text></view>
         </view>
+        <view class="line3"></view>
+
         <view class="row">
           <view class="seat t" wx:if="{{chairs[4]}}" bindtap="clickme" data-num="5"><text>5</text></view>
           <view class="seat f" wx:if="{{!chairs[4]}}" bindtap="clickme" data-num="5"><text>5</text></view>
@@ -51,7 +53,7 @@
           <view class="seat f" wx:if="{{!chairs[7]}}" bindtap="clickme" data-num="8"><text>8</text></view>
         </view>
       </view>
-      <view class='text text-animation {{hEnough?"":"dis"}}'>Turing Team</view>
+      <!-- <view class='text text-animation {{hEnough?"":"dis"}}'>Turing Team</view> -->
       <view class="bottomseat">
         <view class="seat t" wx:if="{{chairs[11]}}" bindtap="clickme" data-num="12"><text>12</text></view>
         <view class="seat f" wx:if="{{!chairs[11]}}" bindtap="clickme" data-num="12"><text>12</text></view>
@@ -60,7 +62,6 @@
       </view>
       <view class="bookcase" bindtap="bookShow"></view>
     </view>
-    <view class="line3"></view>
 
     <view class="mid-right">
       <view class="mr-top">
@@ -112,34 +113,37 @@
     <view class="airc2" bindtap="aircShow"></view>
 
   </view>
-  <van-overlay show="{{ membershow }}" bind:click="memberHide" class="overlay">
-    <view class="wrapper">
-      <view class="block" catch:tap="noop">成员工位</view>
-    </view>
-  </van-overlay>
-  <van-overlay show="{{ machineshow }}" bind:click="machineHide" class="overlay">
-    <view class="wrapper">
-      <view class="block" catch:tap="noop">设备</view>
-    </view>
-  </van-overlay>
-  <van-overlay show="{{ doorshow }}" bind:click="doorHide" class="overlay">
-    <view class="wrapper">
-      <view class="block" catch:tap="noop">门</view>
-    </view>
-  </van-overlay>
-  <van-overlay show="{{ bookshow }}" bind:click="bookHide" class="overlay">
-    <view class="wrapper">
-      <view class="block" catch:tap="noop">书柜</view>
-    </view>
-  </van-overlay>
-  <van-overlay show="{{ aircshow }}" bind:click="aircHide" class="overlay">
-    <view class="wrapper">
-      <view class="block" catch:tap="noop">空调</view>
-    </view>
-  </van-overlay>
-  <van-overlay show="{{ sinkshow }}" bind:click="sinkHide" class="overlay">
-    <view class="wrapper">
-      <view class="block" catch:tap="noop">水槽</view>
-    </view>
-  </van-overlay>
+  <view>
+    <van-overlay show="{{ membershow }}" bind:click="memberHide" class="overlay">
+      <view class="wrapper">
+        <view class="block" catch:tap="noop">成员工位</view>
+      </view>
+    </van-overlay>
+    <van-overlay show="{{ machineshow }}" bind:click="machineHide" class="overlay">
+      <view class="wrapper">
+        <view class="block" catch:tap="noop">设备</view>
+      </view>
+    </van-overlay>
+    <van-overlay show="{{ doorshow }}" bind:click="doorHide" class="overlay">
+      <view class="wrapper">
+        <view class="block" catch:tap="noop">门</view>
+      </view>
+    </van-overlay>
+    <van-overlay show="{{ bookshow }}" bind:click="bookHide" class="overlay">
+      <view class="wrapper">
+        <view class="block" catch:tap="noop">书柜</view>
+      </view>
+    </van-overlay>
+    <van-overlay show="{{ aircshow }}" bind:click="aircHide" class="overlay">
+      <view class="wrapper">
+        <view class="block" catch:tap="noop">空调</view>
+      </view>
+    </van-overlay>
+    <van-overlay show="{{ sinkshow }}" bind:click="sinkHide" class="overlay">
+      <view class="wrapper">
+        <view class="block" catch:tap="noop">水槽</view>
+      </view>
+    </van-overlay>
+  </view>
+
 </view>
