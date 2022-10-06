@@ -119,8 +119,8 @@
 
 .main .mid .top .line1 {
   position: absolute;
-  left: 133.5rpx;
-  width: 4rpx;
+  left: 134rpx;
+  width: 2px;
   height: 27vh;
   background: #CECECC;
   border-radius: 2rpx;
@@ -128,7 +128,7 @@
 
 .main .mid .top .top-right {
   position: absolute;
-  left: 142rpx;
+  left: 144rpx;
 }
 
 .main .mid .top .vertical {
@@ -145,7 +145,7 @@
   top: 28vh;
   margin-left: 14rpx;
   width: 241rpx;
-  height: 4rpx;
+  height: 2px;
   background: #CECECC;
   border-radius: 2rpx;
 }
@@ -168,10 +168,8 @@
 
 .main .mid .midseat {
   position: absolute;
-  /* top: 633rpx; */
   top: 55vh;
-  left: 98rpx;
-  /* bottom: 400rpx; */
+  left: 102rpx;
 }
 
 .main .mid .midseat .seat {
@@ -190,7 +188,7 @@
   bottom: 100rpx;
   /* bottom: 9.25vh; */
   width: 595rpx;
-  height: 4rpx;
+  height: 2px;
   background: #CECECC;
   border-radius: 2rpx;
 }
@@ -248,7 +246,7 @@
   position: absolute;
   top: 8rpx;
   margin-left: 88rpx;
-  width: 4rpx;
+  width: 2px;
   height: 18.7vh;
   background: #CECECC;
   border-radius: 2rpx;
@@ -256,11 +254,10 @@
 
 .main .mid-right .line6 {
   position: absolute;
-  /* top: 639rpx; */
   top: 55.45vh;
-  /* bottom: 415rpx; */
-  left: 445rpx;
-  width: 4rpx;
+  left: 444rpx;
+  /* left: 58.8vw; */
+  width: 2px;
   height: 160rpx;
   background: #CECECC;
   border-radius: 2rpx;
@@ -295,7 +292,7 @@
   /* top: 91rpx; */
   margin-left: 5rpx;
   width: 249rpx;
-  height: 4rpx;
+  height: 2px;
   background: #CECECC;
   border-radius: 2rpx;
 }
