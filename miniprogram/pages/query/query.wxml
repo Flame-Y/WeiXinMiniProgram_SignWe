@@ -1,7 +1,7 @@
 <view class="page-section">
   <view class="left">
     <view class='machine {{machineshow?"jello":""}}' bindtap="machineShow"></view>
-    <view class="door" bindtap="doorShow"></view>
+    <view class='door {{doorshow?"jello":""}}' bindtap="doorShow"></view>
     <view class="leftseat">
       <view class="seat t a" wx:if="{{chairs[8]}}" bindtap="clickme" data-num="9"><text>9</text></view>
       <view class="seat f" wx:if="{{!chairs[8]}}" bindtap="clickme" data-num="9"><text>9</text></view>
@@ -53,14 +53,13 @@
           <view class="seat f" wx:if="{{!chairs[7]}}" bindtap="clickme" data-num="8"><text>8</text></view>
         </view>
       </view>
-      <!-- <view class='text text-animation {{hEnough?"":"dis"}}'>Turing Team</view> -->
       <view class="bottomseat">
         <view class="seat t" wx:if="{{chairs[11]}}" bindtap="clickme" data-num="12"><text>12</text></view>
         <view class="seat f" wx:if="{{!chairs[11]}}" bindtap="clickme" data-num="12"><text>12</text></view>
         <view class="seat t" wx:if="{{chairs[12]}}" bindtap="clickme" data-num="13"><text>13</text></view>
         <view class="seat f" wx:if="{{!chairs[12]}}" bindtap="clickme" data-num="13"><text>13</text></view>
       </view>
-      <view class="bookcase" bindtap="bookShow"></view>
+      <view class='bookcase  {{bookshow?"jello":""}}' bindtap="bookShow"></view>
     </view>
 
     <view class="mid-right">
@@ -106,11 +105,10 @@
       </view>
     </view>
     <view class="right">
-      <view class="sink" bindtap="sinkShow"></view>
-      <view class="airc1" bindtap="aircShow"></view>
-
+      <view class='sink {{sinkshow?"jello":""}}' bindtap="sinkShow"></view>
+      <view class='airc1  {{airc1show?"jello":""}}' bindtap="airc1"></view>
     </view>
-    <view class="airc2" bindtap="aircShow"></view>
+    <view class='airc2 {{airc2show?"jello":""}}' bindtap="airc2"></view>
 
   </view>
   <view>

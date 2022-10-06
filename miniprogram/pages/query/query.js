@@ -13,17 +13,19 @@ Page({
     doorshow: false,
     bookshow: false,
     aircshow: false,
+    airc1show: false,
+    airc2show: false,
     sinkshow: false,
     isOP: false,
-    hEnough:false,
+    hEnough: false,
   },
   onLoad: function (options) {
     this.getC()
     var h = wx.getSystemInfoSync().windowHeight;
-    if(h>=642)
-    this.setData({
-      hEnough:true
-    })
+    if (h >= 642)
+      this.setData({
+        hEnough: true
+      })
   },
   onShow: function () {
     wx.startPullDownRefresh()
@@ -104,8 +106,22 @@ Page({
   },
   aircHide() {
     this.setData({
-      aircshow: false
+      aircshow: false,
+      airc1show: false,
+      airc2show: false
     });
+  },
+  airc1() {
+    this.setData({
+      aircshow: true,
+      airc1show: true,
+    });
+  },
+  airc2() {
+    this.setData({
+      aircshow: true,
+      airc2show: true,
+    })
   },
   sinkShow() {
     this.setData({

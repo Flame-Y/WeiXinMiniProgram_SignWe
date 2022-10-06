@@ -17,14 +17,19 @@
   border: 3rpx solid #464643;
   border-radius: 10rpx;
   text-align: right;
-}
+  vertical-align: middle;
 
-.t {
-  background: #A3D0FF;
 }
 
 .f {
+  background: #A3D0FF;
+  
+}
+
+.t {
   background: #EAE9DE;
+  
+
 }
 
 .seat text {
@@ -83,12 +88,6 @@
   display: none;
 }
 
-.text {
-  position: absolute;
-  bottom: 25vh;
-  left: 170rpx;
-  font-size: 5vh;
-}
 
 .left .leftseat {
   position: absolute;
