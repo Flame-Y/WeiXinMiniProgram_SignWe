@@ -12,6 +12,9 @@ Page({
     isOP: false,
     me: null,
     sumtime: null,
+    userInfo: {
+      avatarUrl: '../../images/avatar.png',
+    },
     yesterday: [
       { name: '第一' },
       { name: '第二' },
@@ -23,7 +26,50 @@ Page({
     this.setData({
       isNewGuys: globalData.isNewPeople,
       isOP: globalData.isOP
-    })
+    }), this.setUserInfoStorageTime();
+  },
+  getUserProfile() {
+    var that = this;
+    wx.showModal({
+      title: "提示",
+      content: "是否允许获取微信昵称和头像？",
+      success(res) {
+        if (res.confirm) {
+          wx.getUserProfile({
+            desc: "用于完善用户资料",
+            success: (res) => {
+              that.setData({
+                userInfo: res.userInfo
+              });
+              wx.setStorageSync("userInfo", res.userInfo);
+              let setNowTime = Date.now() + 3600 * 1000 * 24 * 30;
+              wx.setStorageSync("userInfoStorageTime", setNowTime);
+            },
+            fail: function (err) {
+              console.log(err);
+            },
+          });
+        }
+      },
+    });
+  },
+  setUserInfoStorageTime() {
+    var that = this;
+    let nowTime = Date.now();
+    let oldTime = wx.getStorageSync("userInfoStorageTime");
+    let userInfo = wx.getStorageSync("userInfo");
+    if (userInfo.nickName != undefined && userInfo.nickName != null && userInfo.nickName != "") {
+      if (oldTime && nowTime < oldTime) {
+        that.setData({
+          userInfo: userInfo
+        })
+        return;
+      } else {
+        that.getUserProfile();
+      }
+    } else {
+      that.getUserProfile();
+    }
   },
   onShow: function () {
     this.getMe()
@@ -64,6 +110,12 @@ Page({
         url: "/pages/rename/rename"
       })
     }
+  },
+  onChooseAvatar(e) {
+    const { avatarUrl } = e.detail
+    this.setData({
+      avatarUrl,
+    })
   },
   goadmin() {
     if (this.data.isOP) {

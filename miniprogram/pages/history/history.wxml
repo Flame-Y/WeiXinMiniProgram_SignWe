@@ -31,8 +31,9 @@
 </view>
 <van-cell center>
   <view slot="title" class="m" bindtap="gorename">
-    <view class="tx">
-      <open-data type="userAvatarUrl"></open-data>
+    <view class="tx" bindtap="getUserProfile">
+      <!-- <open-data type="userAvatarUrl"></open-data> -->
+      <image src="{{userInfo.avatarUrl}}"></image>
     </view>
     <view class="n">
       <view class="n1">{{isNewGuys?'未登记':me.name}}</view>
@@ -53,6 +54,5 @@
 </van-cell>
 <van-empty wx:if="{{me.check.length==0||!me.check}}" description="还未学习" class="e" />
 
-<van-cell center wx:key="index" wx:for="{{me.check}}" title="{{item.sfinalStartTime}}" value="{{item.howLong}}分钟"
-  label="{{item.chair}}号座位" border="{{ false }}">
+<van-cell center wx:key="index" wx:for="{{me.check}}" title="{{item.sfinalStartTime}}" value="{{item.howLong}}分钟" label="{{item.chair}}号座位" border="{{ false }}">
 </van-cell>

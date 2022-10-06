@@ -92,7 +92,10 @@
   width: 100rpx;
   height: 100rpx;
 }
-
+.tx image{
+  width: 100rpx;
+  height: 100rpx;
+}
 .m {
   display: flex;
   align-items: center;
