@@ -1,351 +1,355 @@
 /* pages/query/query.wxss */
 .page-section {
-  display: flex;
-  width: 750rpx;
-  height: 2668px;
-  padding-top: 13rpx;
-  background-color: #fbfaef;
-}
-
-.member {
-  background: #FC9D8A;
-}
-
-.seat {
-  width: 73rpx;
-  height: 73rpx;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-  text-align: right;
-  vertical-align: middle;
-
-}
-
-.f {
-  background: #A3D0FF;
+    display: flex;
+    width: 750rpx;
+    height: 2668px;
+    padding-top: 13rpx;
+    background-color: #fbfaef;
+  }
   
-}
-
-.t {
-  background: #EAE9DE;
+  .member {
+    background: #FC9D8A;
+  }
   
-
-}
-
-.seat text {
-  display: block;
-  font-size: 25rpx;
-  /* margin-left: 50rpx; */
-  font-family: "Barlow", sans-serif;
-  font-variant-numeric: tabular-nums;
-  margin-right: 5rpx;
-  margin-top: 40rpx;
-}
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  line-height: 100%;
-}
-
-.block {
-  border-radius: 30rpx;
-  text-align: center;
-  width: 300rpx;
-  height: 150rpx;
-  line-height: 150rpx;
-  margin-bottom: 40rpx;
-  background-color: #fff;
-}
-
-.left {
-  margin-left: 30rpx;
-  height: 100vh;
-}
-
-.machine {
-  /* position: absolute; */
-  width: 76rpx;
-  height: 21.8%;
-  /*26vh*/
-  background: #FFD6B8;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-}
-
-.door {
-  margin-top: 16.2vh;
-  width: 79rpx;
-  height: 77rpx;
-  background: #FFD6B8;
-  border: 3rpx solid #464643;
-  border-radius: 0 0 77rpx 0;
-}
-
-.dis {
-  display: none;
-}
-
-
-.left .leftseat {
-  position: absolute;
-  bottom: 0;
-}
-
-.left .leftseat .seat {
-  margin-bottom: 0.6vh;
-}
-
-.main {
-  /* float: right; */
-  flex: 1;
-  margin-left: 3rpx;
-  height: 100vh;
-  /* background-color: pink; */
-}
-
-.main .mid .top {
-  position: absolute;
-  margin-left: 41rpx;
-}
-
-.main .mid .top .top-left {
-  position: absolute;
-  margin-left: 40rpx;
-
-}
-
-.main .mid .top .line1 {
-  position: absolute;
-  left: 134rpx;
-  width: 2px;
-  height: 27vh;
-  background: #CECECC;
-  border-radius: 2rpx;
-}
-
-.main .mid .top .top-right {
-  position: absolute;
-  left: 144rpx;
-}
-
-.main .mid .top .vertical {
-  margin-bottom: 0.6vh;
-  /* margin-bottom: 9rpx; */
-  width: 85rpx;
-  height: 13.1vh;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-}
-
-.main .mid .top .line2 {
-  position: absolute;
-  top: 28vh;
-  margin-left: 14rpx;
-  width: 241rpx;
-  height: 2px;
-  background: #CECECC;
-  border-radius: 2rpx;
-}
-
-.main .mid .top .horizontal {
-  position: absolute;
-  top: 28.95vh;
-  margin-left: 3rpx;
-  width: 124rpx;
-  height: 80rpx;
-  background: #FC9D8A;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-}
-
-.main .mid .top .horr {
-  position: absolute;
-  left: 141rpx;
-}
-
-.main .mid .midseat {
-  position: absolute;
-  top: 55vh;
-  left: 102rpx;
-}
-
-.main .mid .midseat .seat {
-  display: inline-block;
-  margin-right: 11rpx;
-  margin-bottom: 0.6vh;
-}
-
-.main .mid .midseat .row {
-  margin-bottom: 10rpx;
-}
-
-.main .mid .midseat .line3 {
-  position: absolute;
-  /* top: 61.5vh; */
-  bottom: 100rpx;
-  /* bottom: 9.25vh; */
-  width: 595rpx;
-  height: 2px;
-  background: #CECECC;
-  border-radius: 2rpx;
-}
-
-.main .mid .bottomseat {
-  position: absolute;
-  bottom: 90rpx;
-  margin-left: 146rpx;
-}
-
-.main .mid .bottomseat .seat {
-  display: inline-block;
-  margin-left: 11rpx;
-}
-
-.main .mid .bookcase {
-  position: absolute;
-  bottom: 9rpx;
-  margin-left: 34rpx;
-  width: 283rpx;
-  height: 72rpx;
-  background: #FFD6B8;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-}
-
-
-
-.main .mid-right {
-  margin-left: 319rpx;
-}
-
-.main .mid-right .mr-top {
-  position: absolute;
-  top: 40rpx;
-}
-
-.main .mid-right .mr-top .vertical {
-  margin-bottom: 6rpx;
-  width: 80rpx;
-  height: 9.65vh;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-}
-
-.main .mid-right .mr-top .mrt-left {
-  position: absolute;
-}
-
-.main .mid-right .mr-top .mrt-right {
-  margin-left: 96rpx;
-}
-
-.main .mid-right .mr-top .line4 {
-  position: absolute;
-  top: 8rpx;
-  margin-left: 88rpx;
-  width: 2px;
-  height: 18.7vh;
-  background: #CECECC;
-  border-radius: 2rpx;
-}
-
-.main .mid-right .line6 {
-  position: absolute;
-  top: 55.45vh;
-  left: 444rpx;
-  /* left: 58.8vw; */
-  width: 2px;
-  height: 160rpx;
-  background: #CECECC;
-  border-radius: 2rpx;
-}
-
-.main .mid-right .rmember {
-  position: absolute;
-  top: 27.85vh;
-  margin-left: 22rpx;
-}
-
-.main .mid-right .rmember .horizontal {
-  width: 120rpx;
-  height: 80rpx;
-  display: inline-block;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-}
-
-.main .mid-right .rmember .horr {
-  position: absolute;
-  left: 133rpx;
-}
-
-.main .mid-right .rmember .row1 {
-  margin-bottom: 8%;
-}
-
-.main .mid-right .rmember .line5 {
-  position: absolute;
-  top: 47%;
-  /* top: 91rpx; */
-  margin-left: 5rpx;
-  width: 249rpx;
-  height: 2px;
-  background: #CECECC;
-  border-radius: 2rpx;
-}
-
-.main .mid-right .rmember .right-bottom {
-  position: absolute;
-  /* top: 295rpx; */
-  top: 26.5vh;
-  /* bottom: -405rpx; */
-}
-
-.main .mid-right .bottom {
-  position: absolute;
-  bottom: 9rpx;
-  margin-left: 17rpx;
-  width: 180rpx;
-  height: 80rpx;
-  background: #FC9D8A;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-}
-
-.main .right {
-  position: absolute;
-  right: 30rpx;
-}
-
-.main .right .sink {
-  width: 76rpx;
-  height: 11.56vh;
-  background: #FFD6B8;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-}
-
-.main .right .airc1 {
-  margin-top: 3.1vh;
-  width: 76rpx;
-  height: 7.68vh;
-  background: #FFD6B8;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-}
-
-.main .airc2 {
-  position: absolute;
-  right: 30rpx;
-  bottom: 9rpx;
-  width: 76rpx;
-  height: 99rpx;
-  background: #FFD6B8;
-  border: 3rpx solid #464643;
-  border-radius: 10rpx;
-}
-
-@import "../query/animation.wxss";
+  .seat {
+    width: 73rpx;
+    height: 73rpx;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+    text-align: right;
+    vertical-align: middle;
+  
+  }
+  
+  .f {
+    background: #A3D0FF;
+    
+  }
+  
+  .t {
+    background: #EAE9DE;
+    
+  
+  }
+  
+  
+  .ct{
+    background: #fc9d8a;
+  }
+  .seat text {
+    display: block;
+    font-size: 25rpx;
+    /* margin-left: 50rpx; */
+    font-family: "Barlow", sans-serif;
+    font-variant-numeric: tabular-nums;
+    margin-right: 5rpx;
+    margin-top: 40rpx;
+  }
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    line-height: 100%;
+  }
+  
+  .block {
+    border-radius: 30rpx;
+    text-align: center;
+    width: 300rpx;
+    height: 150rpx;
+    line-height: 150rpx;
+    margin-bottom: 40rpx;
+    background-color: #fff;
+  }
+  
+  .left {
+    margin-left: 30rpx;
+    height: 100vh;
+  }
+  
+  .machine {
+    /* position: absolute; */
+    width: 76rpx;
+    height: 21.8%;
+    /*26vh*/
+    background: #FFD6B8;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+  }
+  
+  .door {
+    margin-top: 16.2vh;
+    width: 79rpx;
+    height: 77rpx;
+    background: #FFD6B8;
+    border: 3rpx solid #464643;
+    border-radius: 0 0 77rpx 0;
+  }
+  
+  .dis {
+    display: none;
+  }
+  
+  
+  .left .leftseat {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .left .leftseat .seat {
+    margin-bottom: 0.6vh;
+  }
+  
+  .main {
+    /* float: right; */
+    flex: 1;
+    margin-left: 3rpx;
+    height: 100vh;
+    /* background-color: pink; */
+  }
+  
+  .main .mid .top {
+    position: absolute;
+    margin-left: 41rpx;
+  }
+  
+  .main .mid .top .top-left {
+    position: absolute;
+    margin-left: 40rpx;
+  
+  }
+  
+  .main .mid .top .line1 {
+    position: absolute;
+    left: 134rpx;
+    width: 2px;
+    height: 27vh;
+    background: #CECECC;
+    border-radius: 2rpx;
+  }
+  
+  .main .mid .top .top-right {
+    position: absolute;
+    left: 144rpx;
+  }
+  
+  .main .mid .top .vertical {
+    margin-bottom: 0.6vh;
+    /* margin-bottom: 9rpx; */
+    width: 85rpx;
+    height: 13.1vh;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+  }
+  
+  .main .mid .top .line2 {
+    position: absolute;
+    top: 28vh;
+    margin-left: 14rpx;
+    width: 241rpx;
+    height: 2px;
+    background: #CECECC;
+    border-radius: 2rpx;
+  }
+  
+  .main .mid .top .horizontal {
+    position: absolute;
+    top: 28.95vh;
+    margin-left: 3rpx;
+    width: 124rpx;
+    height: 80rpx;
+    background: #FC9D8A;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+  }
+  
+  .main .mid .top .horr {
+    position: absolute;
+    left: 141rpx;
+  }
+  
+  .main .mid .midseat {
+    position: absolute;
+    top: 55vh;
+    left: 102rpx;
+  }
+  
+  .main .mid .midseat .seat {
+    display: inline-block;
+    margin-right: 11rpx;
+    margin-bottom: 0.6vh;
+  }
+  
+  .main .mid .midseat .row {
+    margin-bottom: 10rpx;
+  }
+  
+  .main .mid .midseat .line3 {
+    position: absolute;
+    /* top: 61.5vh; */
+    bottom: 100rpx;
+    /* bottom: 9.25vh; */
+    width: 595rpx;
+    height: 2px;
+    background: #CECECC;
+    border-radius: 2rpx;
+  }
+  
+  .main .mid .bottomseat {
+    position: absolute;
+    bottom: 90rpx;
+    margin-left: 146rpx;
+  }
+  
+  .main .mid .bottomseat .seat {
+    display: inline-block;
+    margin-left: 11rpx;
+  }
+  
+  .main .mid .bookcase {
+    position: absolute;
+    bottom: 9rpx;
+    margin-left: 34rpx;
+    width: 283rpx;
+    height: 72rpx;
+    background: #FFD6B8;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+  }
+  
+  
+  
+  .main .mid-right {
+    margin-left: 319rpx;
+  }
+  
+  .main .mid-right .mr-top {
+    position: absolute;
+    top: 40rpx;
+  }
+  
+  .main .mid-right .mr-top .vertical {
+    margin-bottom: 6rpx;
+    width: 80rpx;
+    height: 9.65vh;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+  }
+  
+  .main .mid-right .mr-top .mrt-left {
+    position: absolute;
+  }
+  
+  .main .mid-right .mr-top .mrt-right {
+    margin-left: 96rpx;
+  }
+  
+  .main .mid-right .mr-top .line4 {
+    position: absolute;
+    top: 8rpx;
+    margin-left: 88rpx;
+    width: 2px;
+    height: 18.7vh;
+    background: #CECECC;
+    border-radius: 2rpx;
+  }
+  
+  .main .mid-right .line6 {
+    position: absolute;
+    top: 55.45vh;
+    left: 444rpx;
+    /* left: 58.8vw; */
+    width: 2px;
+    height: 160rpx;
+    background: #CECECC;
+    border-radius: 2rpx;
+  }
+  
+  .main .mid-right .rmember {
+    position: absolute;
+    top: 27.85vh;
+    margin-left: 22rpx;
+  }
+  
+  .main .mid-right .rmember .horizontal {
+    width: 120rpx;
+    height: 80rpx;
+    display: inline-block;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+  }
+  
+  .main .mid-right .rmember .horr {
+    position: absolute;
+    left: 133rpx;
+  }
+  
+  .main .mid-right .rmember .row1 {
+    margin-bottom: 8%;
+  }
+  
+  .main .mid-right .rmember .line5 {
+    position: absolute;
+    top: 47%;
+    /* top: 91rpx; */
+    margin-left: 5rpx;
+    width: 249rpx;
+    height: 2px;
+    background: #CECECC;
+    border-radius: 2rpx;
+  }
+  
+  .main .mid-right .rmember .right-bottom {
+    position: absolute;
+    /* top: 295rpx; */
+    top: 26.5vh;
+    /* bottom: -405rpx; */
+  }
+  
+  .main .mid-right .bottom {
+    position: absolute;
+    bottom: 9rpx;
+    margin-left: 17rpx;
+    width: 180rpx;
+    height: 80rpx;
+    background: #FC9D8A;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+  }
+  
+  .main .right {
+    position: absolute;
+    right: 30rpx;
+  }
+  
+  .main .right .sink {
+    width: 76rpx;
+    height: 11.56vh;
+    background: #FFD6B8;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+  }
+  
+  .main .right .airc1 {
+    margin-top: 3.1vh;
+    width: 76rpx;
+    height: 7.68vh;
+    background: #FFD6B8;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+  }
+  
+  .main .airc2 {
+    position: absolute;
+    right: 30rpx;
+    bottom: 9rpx;
+    width: 76rpx;
+    height: 99rpx;
+    background: #FFD6B8;
+    border: 3rpx solid #464643;
+    border-radius: 10rpx;
+  }
+  
+  @import "../query/animation.wxss";

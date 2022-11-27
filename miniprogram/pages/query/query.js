@@ -1,4 +1,7 @@
 // pages/query/query.js
+import { apiGetAllChairs } from "../../request/api/chairs"
+import { apiSignOut } from "../../request/api/chairs"
+
 const {
   globalData
 } = getApp()
@@ -20,6 +23,12 @@ Page({
     hEnough: false,
   },
   onLoad: function (options) {
+    apiGetAllChairs().then(function (res) {
+      console.log(res);
+    })
+    // apiSignOut(1,"o8Mur5TpKr-fY-SXt4Y_z-WIfMAU").then(function (res) {
+    //   console.log(res);
+    // })
     this.getC()
     var h = wx.getSystemInfoSync().windowHeight;
     if (h >= 642)

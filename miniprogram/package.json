@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@vant/weapp": "^1.8.5",
+    "axios": "^0.26.0",
+    "axios-miniprogram-adapter": "^0.3.4",
     "jszip": "^3.6.0",
     "qrcode-base64": "^1.0.1"
   }
